@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<Navigator/>
+<Products/>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigator from './components/Navigator.vue'
+import Products from './views/Products.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navigator,
+    Products
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app{
+  margin: 0;
+  padding: 0;
 }
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background-color: rgb(248, 248, 248);
+  position: relative;
+}
+
 </style>
